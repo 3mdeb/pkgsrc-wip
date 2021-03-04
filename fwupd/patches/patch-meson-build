@@ -1,0 +1,11 @@
+--- meson.build	2021-03-01 18:27:23.976238000 +0100
++++ meson.build	2021-03-01 18:24:55.904427000 +0100
+@@ -239,7 +239,7 @@
+     warning('Polkit is disabled, the daemon will allow ALL client actions')
+   endif
+   udevdir = get_option('udevdir')
+-  if udevdir == ''
++  if udevdir == '' and host_machine.system() == 'linux'
+     udev = dependency('udev')
+     udevdir = udev.get_pkgconfig_variable('udevdir')
+   endif

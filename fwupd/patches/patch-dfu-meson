@@ -1,0 +1,8 @@
+--- plugins/dfu/meson.build	2021-03-04 17:34:05.404649000 +0100
++++ plugins/dfu/meson.build	2021-03-04 17:31:24.454258000 +0100
+@@ -1,4 +1,4 @@
+-if get_option('gusb')
++if get_option('gusb') and host_machine.system() == 'linux'
+ cargs = ['-DG_LOG_DOMAIN="FuPluginDfu"']
+ 
+ install_data(['dfu.quirk'],

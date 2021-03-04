@@ -1,0 +1,20 @@
+$NetBSD$
+
+SHA1 (fwupd/1.5.7.tar.gz) = 5c232dc027081eebe8eab5d001ac2b66d8aae7f4
+RMD160 (fwupd/1.5.7.tar.gz) = 8a70227cd6be29f9b17ac677f2efdb01fb1b80fe
+SHA512 (fwupd/1.5.7.tar.gz) = 340a114123bd31a7a31370faaaa10e6517316d8f9c2b06f22d8b70bef64b7e6d9427682b8ceeea05570c8960eb7854ed5fc91aa450ff53d114fb97be43065213
+Size (fwupd/1.5.7.tar.gz) = 2498618 bytes
+SHA1 (patch-dfu-csr-meson) = 8222590f6cacb48eff14e3183b88cb25831e1037
+SHA1 (patch-dfu-meson) = 5e57ab393bb12b7dba5a4dfcffd2111b0e6769fc
+SHA1 (patch-fu-common) = f1eb14b70d5df468d6bba1f4a998b871444d7211
+SHA1 (patch-fu-efivar) = 9e6e007619d6627cfe52a62d422fca5ef2f5297d
+SHA1 (patch-fu-engine) = fd21dfde3b41a6000a22036ae5b2d85a8d9f1a17
+SHA1 (patch-fu-main) = bd80b730e63a37be2840745671ab5132221034d3
+SHA1 (patch-fu-self-test) = b3d86c1f8cea84ca3ce951b6c2decbd9521e22d9
+SHA1 (patch-fu-udev-device) = aa9f33ff9bbf4dcfc9efc80ca55817c48a688494
+SHA1 (patch-gusb-wrap) = a37a7be864546509f12f250e7263df31da3d07c5
+SHA1 (patch-libfwupd-meson-build) = f8c16f1cb6cae53dc8ac07e56596c8df970e7d29
+SHA1 (patch-libfwupdplugin-meson-build) = ca531ac2afc06f4599ddc50c1658c8eb0e002a6c
+SHA1 (patch-libjcat-wrap) = cb85c8f9eebc17316408f626bb1dd37c44915f95
+SHA1 (patch-libxmlb-wrap) = f9d240b66cbc62c7b6932cc05159759bc4ffa852
+SHA1 (patch-meson-build) = 6e5d0d3e5ba1aca6b98bc327a5f3badaf8238dcb

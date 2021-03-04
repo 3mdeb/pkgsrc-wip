@@ -1,0 +1,8 @@
+--- subprojects/libjcat.wrap	2021-03-04 16:47:36.874353000 +0100
++++ subprojects/libjcat.wrap	2021-03-04 16:47:59.637769000 +0100
+@@ -1,4 +1,4 @@
+ [wrap-git]
+ directory = libjcat
+ url = https://github.com/hughsie/libjcat.git
+-revision = 0.1.0
++revision = 0.1.6

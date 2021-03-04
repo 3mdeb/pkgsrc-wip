@@ -1,0 +1,20 @@
+--- src/fu-engine.c.orig	2021-02-23 15:54:50.000000000 +0100
++++ src/fu-engine.c	2021-03-04 13:28:59.418755000 +0100
+@@ -6299,7 +6299,7 @@
+ 	guint backend_cnt = 0;
+ 	g_autoptr(GPtrArray) checksums_approved = NULL;
+ 	g_autoptr(GPtrArray) checksums_blocked = NULL;
+-#ifndef _WIN32
++#ifdef __linux__
+ 	g_autoptr(GError) error_local = NULL;
+ #endif
+ 
+@@ -6311,7 +6311,7 @@
+ 		return TRUE;
+ 
+ /* TODO: Read registry key [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography] "MachineGuid" */
+-#ifndef _WIN32
++#ifdef __linux__
+ 	/* cache machine ID so we can use it from a sandboxed app */
+ 	self->host_machine_id = fwupd_build_machine_id ("fwupd", &error_local);
+ 	if (self->host_machine_id == NULL)
