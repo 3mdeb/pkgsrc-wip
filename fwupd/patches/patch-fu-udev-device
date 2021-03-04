@@ -1,0 +1,11 @@
+--- libfwupdplugin/fu-udev-device.c	2021-03-02 11:54:37.632604000 +0100
++++ libfwupdplugin/fu-udev-device.c	2021-03-02 11:56:26.361070000 +0100
+@@ -1583,7 +1583,7 @@
+ fu_udev_device_write_sysfs (FuUdevDevice *self, const gchar *attribute,
+ 			    const gchar *val, GError **error)
+ {
+-#ifndef _WIN32
++#ifdef __linux__
+ 	ssize_t n;
+ 	int r;
+ 	int fd;

@@ -1,0 +1,10 @@
+--- libfwupd/meson.build	2021-03-04 12:37:21.545216000 +0100
++++ libfwupd/meson.build	2021-03-04 12:36:34.879315000 +0100
+@@ -154,6 +154,7 @@
+     input: fwupd_gir[0],
+     output: 'fwupd.map',
+     command: [
++      python3,
+       join_paths(meson.source_root(), 'contrib', 'generate-version-script.py'),
+       'LIBFWUPD',
+       '@INPUT@',

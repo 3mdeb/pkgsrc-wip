@@ -1,0 +1,14 @@
+--- src/fu-main.c	2021-03-04 17:16:21.028006000 +0100
++++ src/fu-main.c	2021-03-04 17:08:32.027231000 +0100
+@@ -2037,9 +2037,10 @@
+ 	else if (timed_exit)
+ 		g_timeout_add_seconds (5, fu_main_timed_exit_cb, priv->loop);
+ 
++#ifdef __linux__
+ 	/* drop heap except one page */
+ 	malloc_trim (4096);
+-
++#endif
+ 	/* wait */
+ 	g_message ("Daemon ready for requests (locale %s)", g_getenv ("LANG"));
+ 	g_main_loop_run (priv->loop);

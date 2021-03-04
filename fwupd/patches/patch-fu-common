@@ -1,0 +1,11 @@
+--- libfwupdplugin/fu-common.c	2021-03-02 11:20:42.960161000 +0100
++++ libfwupdplugin/fu-common.c	2021-03-02 11:21:20.304675000 +0100
+@@ -2257,7 +2257,7 @@
+ gboolean
+ fu_common_kernel_locked_down (void)
+ {
+-#ifndef _WIN32
++#ifdef __linux__
+ 	gsize len = 0;
+ 	g_autofree gchar *dir = fu_common_get_path (FU_PATH_KIND_SYSFSDIR_SECURITY);
+ 	g_autofree gchar *fname = g_build_filename (dir, "lockdown", NULL);

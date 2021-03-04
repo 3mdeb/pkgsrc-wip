@@ -1,0 +1,11 @@
+--- src/fu-self-test.c	2021-03-02 12:11:00.737190000 +0100
++++ src/fu-self-test.c	2021-03-02 12:11:38.522439000 +0100
+@@ -583,7 +583,7 @@
+ 		"    <firmware compare=\"ge\" version=\"1.2.3\"/>"
+ 		"    <firmware compare=\"eq\" version=\"4.5.6\">bootloader</firmware>"
+ 		"    <firmware compare=\"regex\" version=\"USB:0xFFFF|DMI:Lenovo\">vendor-id</firmware>"
+-#ifndef _WIN32
++#ifdef __linux__
+ 		"    <id compare=\"ge\" version=\"4.0.0\">org.kernel</id>"
+ #endif
+ 		"  </requires>"
